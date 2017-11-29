@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid none;
+  border-radius: 5px;
+  opacity: 0.99;  /*opacity to force background behind*/
+  font-family: Arial;
+}
+
+#container {
+  margin: auto;
+}
+
+#background, #filter {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.dark {
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1));
+}
+
+.light {
+  background: #aaa;
+  opacity: 0.4;
+}
+
+#fillViewport {
+  position: relative;
+  height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+header ul {
+  padding: 10px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+span {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+header li {
+  display: inline-block;
+  text-align: center;
+}
+
+header li {
+  list-style: none;
+}
+
+header li a {
+  font: bold 14px 'Lato', sans-serif;
+  padding: 2px 0;
+}
+
+h1 {
+  color: #eee;
+  font: 80px 'Lato', sans-serif;
+  padding:20px;
+}
+
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  font: 60px "Times New Roman";
+  color: #eee;
+}
+
+.myStory {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 140vh;
+  margin: 60vh auto;
+  padding: 50px;
+  background: radial-gradient(#eee, #ccc);
+  color: #222;
+  opacity: 0.99;  /*opacity to force background behind*/
+}
+
+.myStory:nth-of-type(2n + 1) {
+  flex-direction: row-reverse;
+  background: radial-gradient(#444, #222);
+  color: #ccc;
+}
+
+.myStory:first-of-type {
+  margin-top: 100vh;
+}
+
+.myStory p {
+  max-width: 800px;
+  margin: 50px 0;
+  font: 25px 'Patrick Hand', cursive, sans-serif;
+}
+
+.myStory figure {
+  height: 200px;
+  width: 200px;
+  border: 2px solid goldenrod;
+  border-radius: 100%;
+}
+
+#mastermind figure {
+  background: url("images/mastermind.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#excelGames figure {
+  background: url("images/typing2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#forLoop figure {
+  background: url("images/forLoop.jpg") no-repeat 0 0;
+  background-size: 200%;
+}
+
+#workStudy figure {
+  background: url("images/workStudy.jpg") no-repeat center center;
+  background-size: 120%;
+}
+
+#foundersCoders figure {
+  background: url("images/foundersCoders.png") no-repeat center center;
+  background-size: 110%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 300px;
+  background: #282828;
+  text-align: center;
+  padding: 50px;
+}
+
+footer > div {
+  flex: 1 1 150px;
+  color: #fff;
+  text-align: left;
+  font: 14px Arial;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+#contact {
+  flex-grow: 2;
+  order: 1;
+}
+
+#social {
+  flex-grow: 10;
+  text-align: center;
+  order: 2;
+}
+
+#social ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#social ul div {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#social li {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #666;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0.7;
+}
+
+#social li a {
+  height: 50px;
+  width: 50px;
+}
+
+#navigate {
+  order: 3;
+}
+
+#navigate div {
+  float: right;
+}
+
+footer li:hover {
+  opacity: 1;
+}
+
+#social #github {
+  background: url("images/github.png") no-repeat center center;
+  background-size: 140%;
+}
+
+#social #codewars {
+  background: url("images/codewars.png");
+  background-size: cover;
+}
+
+#social #codeCamp {
+  background: url("images/freeCodeCamp.jpg");
+  background-size: cover;
+}
+
+#social #thisSite {
+  background: url("images/siteRepo.png") no-repeat 50% 70%;
+  background-size: 150%;
+}
+
+#social #mySite {
+  background: url("images/me.png");
+  background-size: cover;
+}
+
+#social #kata {
+  background: url("images/kata.png");
+  background-size: cover;
+}
+
+.original {
+  background: url("images/typing.jpg") no-repeat 60% 0;
+  background-size: cover;
+}
+
+.turing {
+  background: url("images/turing.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.code {
+  background: url("images/code.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.motherboard {
+  background: url("images/motherboard.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.typing1 {
+  background: url("images/typing1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.servers {
+  background: url("images/servers.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.worldWideWeb {
+  background: url("images/worldWideWeb.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/******************************************************/
+
+@media (max-width: 760px) {
+
+  h2 {
+    font-size: 35px;
+    max-width: 350px;
+  }
+
+  header li {
+    text-align: left;
+    width: 80px;
+  }
+
+  #social {
+    order: 4;
+    text-align: left;
+  }
+
+  #navigate div {
+    float: left;
+  }
+}
+
+@media (max-width: 450px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+    max-width: 250px;
+  }
+
+  span {
+    width: 100%;
+  }
+
+  .myStory {
+    padding: 20px;
+  }
+
+  .myStory p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  }
+}
