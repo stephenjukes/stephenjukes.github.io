@@ -154,6 +154,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
   min-height: 300px;
   background: #282828;
   text-align: center;
@@ -251,6 +252,14 @@ footer li:hover {
 #social #kata {
   background: url("images/kata.png");
   background-size: cover;
+}
+
+#footnote {
+  position: absolute;
+  margin: 10px;
+  color: yellow;
+  bottom: 0;
+  right:0;
 }
 
 .original {
