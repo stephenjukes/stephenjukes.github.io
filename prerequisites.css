@@ -158,8 +158,8 @@ h2 {
 }
 
 #workStudy figure {
-  background: url("images/workStudy.jpg") no-repeat center;
-  background-size: 120%;
+  background: url("images/workStudy.jpg") no-repeat center 0;
+  background-size: 150%;
 }
 
 #foundersCoders figure {
