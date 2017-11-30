@@ -132,7 +132,7 @@ h2 {
 .myStory p {
   max-width: 800px;
   margin: 50px 0;
-  font: 25px 'Signika Negative', sans-serif;
+  font: bold 20px/30px 'Lato', sans-serif;
 }
 
 .myStory figure {
