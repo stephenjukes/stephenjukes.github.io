@@ -95,11 +95,19 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   height: 140vh;
-  margin: 60vh auto;
+
   padding: 50px;
   background: radial-gradient(#eee, #ccc);
   color: #222;
   opacity: 0.99;  /*opacity to force background behind*/
+}
+
+.close {
+  margin: 0;
+}
+
+.separate {
+  margin: 60vh auto;
 }
 
 .myStory:nth-of-type(2n + 1) {
@@ -173,6 +181,14 @@ footer > div {
 footer li {
   list-style: none;
   margin: 10px 0;
+}
+
+#footnote {
+  margin: 10px;
+  position: absolute;
+  color: yellow;
+  bottom: 0;
+  right:0;
 }
 
 #contact {
@@ -252,14 +268,6 @@ footer li:hover {
 #social #kata {
   background: url("images/kata.png");
   background-size: cover;
-}
-
-#footnote {
-  position: absolute;
-  margin: 10px;
-  color: yellow;
-  bottom: 0;
-  right:0;
 }
 
 .original {
@@ -347,3 +355,4 @@ footer li:hover {
 
   }
 }
+
