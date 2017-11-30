@@ -1,50 +1,19 @@
+// Separating sections if javascript is enabled to change background
+var myStories = document.getElementsByClassName('myStory');
+
+for(i = 0; i < myStories.length; i++) {
+  myStories[i].classList.add('separate');
+}
+
+// Changing the background between sections
 document.addEventListener('scroll', function (e) {
+  var position = window.pageYOffset,
+      deviceHeight = window.innerHeight,
+      back = document.getElementById('background'),
+      filter = document.getElementById('filter'),
+      classes = ['original', 'turing', 'code', 'motherboard', 'typing1', 'servers', 'worldWideWeb'],
+      index = Math.floor(position / (2 * deviceHeight));
 
-  var pos = window.pageYOffset;
-  var h = window.innerHeight;
-  var back = document.getElementById('background');
-  var filter = document.getElementById('filter');
-
-  if (pos > 0 && pos < 2 * h) {
-    back.className = '';
-    filter.className = '';
-    back.classList.add('original');
-    filter.classList.add('dark');
-  }
-
-  if (pos > 2 * h) {
-    filter.className = '';
-    filter.classList.add('light');
-  }
-
-  if (pos > 2 * h && pos < 4 * h) {
-    back.className = '';
-    back.classList.add('turing');
-  }
-
-  if (pos > 4 * h && pos < 6 * h) {
-    back.className = '';
-    back.classList.add('code');
-  }
-
-  if (pos > 6 * h && pos < 8 * h) {
-    back.className = '';
-    back.classList.add('motherboard');
-  }
-
-  if (pos > 8 * h && pos < 10 * h) {
-    back.className = '';
-    back.classList.add('typing1');
-  }
-
-  if (pos > 10 * h && pos < 12 * h) {
-    back.className = '';
-    back.classList.add('servers');
-  }
-
-  if (pos > 12 * h && pos < 14 * h) {
-    back.className = '';
-    back.classList.add('worldWideWeb');
-  }
-
+  back.className = classes[index];
+  filter.className = position < 2 * deviceHeight ? 'dark' : 'light';
 })
