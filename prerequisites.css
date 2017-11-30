@@ -148,7 +148,7 @@ h2 {
 }
 
 #excelGames figure {
-  background: url("images/typing2.jpg") no-repeat center;
+  background: url("images/excelGames.png") no-repeat center;
   background-size: cover;
 }
 
@@ -305,7 +305,7 @@ footer li:hover {
 }
 
 .servers {
-  background: url("images/servers.jpeg") no-repeat center;
+  background: url("images/servers.jpg") no-repeat center;
   background-size: cover;
 }
 
