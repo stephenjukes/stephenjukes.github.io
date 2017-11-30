@@ -100,7 +100,7 @@ h2 {
   height: 140vh;
   padding: 50px;
   background: #eee;
-  color: #222;
+  color: #555;
   opacity: 0.99;  /*opacity to force background behind*/
 }
 
@@ -132,7 +132,7 @@ h2 {
 .myStory p {
   max-width: 800px;
   margin: 50px 0;
-  font: 25px 'Patrick Hand', cursive, sans-serif;
+  font: 25px 'Signika Negative', sans-serif;
 }
 
 .myStory figure {
