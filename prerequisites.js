@@ -1,6 +1,6 @@
 document.addEventListener('scroll', function (e) {
 
-  var pos = e.pageY;
+  var pos = window.pageYOffset;
   var h = window.innerHeight;
   var back = document.getElementById('background');
   var filter = document.getElementById('filter');
