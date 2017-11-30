@@ -327,6 +327,10 @@ footer li:hover {
     text-align: left;
     width: 80px;
   }
+  
+  figure {
+    display: none;
+  }
 
   #social {
     order: 4;
