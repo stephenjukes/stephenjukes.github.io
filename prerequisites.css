@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid none;
-  border-radius: 5px;
   opacity: 0.99;  /*opacity to force background behind*/
   font-family: Arial;
 }
@@ -51,6 +50,10 @@ header ul {
   text-align: center;
 }
 
+h4 {
+  margin-bottom: 20px;
+}
+
 span {
   display: inline-flex;
   justify-content: space-around;
@@ -85,7 +88,7 @@ h2 {
   transform: translate(-50%, -50%);
   max-width: 500px;
   font: 60px "Times New Roman";
-  color: #eee;
+  color: #444;
 }
 
 .myStory {
@@ -95,9 +98,8 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   height: 140vh;
-
   padding: 50px;
-  background: radial-gradient(#eee, #ccc);
+  background: #eee;
   color: #222;
   opacity: 0.99;  /*opacity to force background behind*/
 }
@@ -112,12 +114,19 @@ h2 {
 
 .myStory:nth-of-type(2n + 1) {
   flex-direction: row-reverse;
-  background: radial-gradient(#444, #222);
-  color: #ccc;
 }
 
-.myStory:first-of-type {
+.myStory:nth-of-type(4) {
+  background: #ccf;
   margin-top: 100vh;
+}
+
+.myStory:nth-of-type(6) {
+  background: #cfc;
+}
+
+.myStory:nth-of-type(8) {
+  background: #ffc;
 }
 
 .myStory p {
@@ -134,12 +143,12 @@ h2 {
 }
 
 #mastermind figure {
-  background: url("images/mastermind.jpg") no-repeat center center;
+  background: url("images/mastermind.jpg") no-repeat center;
   background-size: cover;
 }
 
 #excelGames figure {
-  background: url("images/typing2.jpg") no-repeat center center;
+  background: url("images/typing2.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -149,12 +158,12 @@ h2 {
 }
 
 #workStudy figure {
-  background: url("images/workStudy.jpg") no-repeat center center;
+  background: url("images/workStudy.jpg") no-repeat center;
   background-size: 120%;
 }
 
 #foundersCoders figure {
-  background: url("images/foundersCoders.png") no-repeat center center;
+  background: url("images/foundersCoders.png") no-repeat center;
   background-size: 110%;
 }
 
